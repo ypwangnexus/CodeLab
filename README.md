@@ -5,7 +5,7 @@ This is my personal solutions for [C++ in Chromium 101 - Codelab](https://sites.
 
 ### Build
 1. Get chromium source files.
-2. Put repository `ChromiumCodeLab` along side with `src`.
+2. Put repository `CodeLab` along side with `src`.
 3. Setup `ninja`, which can be found in the `depot_tools` of chromium.
 4. Run the following command to generate the ninja build files, build and run.
 ```bash
