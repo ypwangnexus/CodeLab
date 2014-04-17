@@ -15,8 +15,14 @@ $ ninja -C out/Release
 $ out/Release/use_base
 ```
 
-# for windows7
+### for windows7
 1. open an administrator cmd console and delete the file build,chrome,tools,third_party
-2. run "mklink /D build ..\src\build" and do the same for all other directories: chrome, tools, third_party
-3. run "c:\work\chrome\CodeLab-master>..\src\tools\gyp\gyp --depth=. --no-circular-check cpp101.gyp -I..\src\build\common.gypi" 
+2. run  
+```bat
+c:\work\chrome\CodeLab-master> mklink /D build ..\src\build
+c:\work\chrome\CodeLab-master> do the same for all other directories: \
+ chrome, tools, third_party
+c:\work\chrome\CodeLab-master> ..\src\tools\gyp\gyp --depth=. \
+--no-circular-check cpp101.gyp -I..\src\build\common.gypi
+```
 Note: my chromium src path is "c:\work\chrome\src"
